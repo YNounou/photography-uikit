@@ -1,0 +1,24 @@
+<header class="{{backgroundColor}} header">
+    <div class="header__logo">
+        <img src="assets/images/logos/moutahidlogo_nobg.png" alt="logo" />
+    </div>
+    <button class="header__menu-toggle" (click)="toggleMenu()">
+        <fa-icon [icon]="faBars" class="menu-icon"></fa-icon>
+    </button>
+    <nav class="{{backgroundColor}}  header__nav" [ngClass]="{'active': isMenuVisible}">
+        <ul>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Accueil</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Gallerie</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
